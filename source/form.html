@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -8,14 +8,14 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo--mini">
+    <a class="page-header__logo page-header__logo--mini" href="index.html" aria-label="На главную">
       <img src="https://via.placeholder.com/33x37" width="33" height="37" alt="Логотип Cat Energy">
     </a>
-    <a class="page-header__logo-text">
+    <a class="page-header__logo-text" aria-label="На главную">
       <img src="https://via.placeholder.com/101x18" width="101" height="18" alt="Cat Energy">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle">Открыть меню</button>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item"><a href="index.html">Главная</a></li>
         <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
@@ -26,7 +26,7 @@
 
   <main class="page-form">
     <h1 class="page-form__heading">Подбор программы</h1>
-    <p class="page-form__subheading">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+    <p class="page-form__subheading">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
     <section class="page-form__form-container">
       <h2 class="visually-hidden">Заполните анкету</h2>
@@ -35,16 +35,16 @@
           <ul class="form__cat-parameters-list">
             <li class="form__cat-parameter">
               <label class="form__name-label">Имя:*
-                <input class="form__name" type="text" name="cat-name" value="" required>
+                <input class="form__name" type="text" name="cat-name" value="" placeholder="Барсик" required>
               </label>
             </li>
             <li class="form__cat-parameter"><label class="form__name-label">Вес (кг):*
-                <input class="form__name" type="text" name="cat-weight" value="" required>
+                <input class="form__name" type="number" name="cat-weight" value="" placeholder="7" required>
               </label>
             </li>
             <li class="form__cat-parameter">
               <label class="form__name-label">Возраст (лет):
-                <input class="form__name" type="text" name="cat-age" value="">
+                <input class="form__name" type="number" name="cat-age" value="" placeholder="7">
               </label>
             </li>
           </ul>
@@ -61,16 +61,16 @@
         </fieldset>
 
         <fieldset class="form__owner">
-          <legend class="form__legend">Контактные данные<br>()владельца кота)</legend>
+          <legend class="form__legend">Контактные данные ()владельца кота)</legend>
           <ul class="form__owner-parameters">
             <li class="form__owner-parameter">
               <label class="form__name-label">E-mail:*
-                <input class="form__name" type="email" name="email" value="" required>
+                <input class="form__name" type="email" name="email" value="" placeholder="example@email.ru" required>
               </label>
             </li>
             <li class="form__owner-parameter">
               <label class="form__name-label">Телефон:*
-                <input class="form__name" type="tel" name="phone" value="" required>
+                <input class="form__name" type="tel" name="phone" value="" placeholder="8 921 123 45 67" required>
               </label>
             </li>
           </ul>
@@ -85,7 +85,7 @@
           <ul class="form__additional-list">
             <li class="form__additional-item">
               <label class="form__additional-label">
-                <input class="form__additional-checkbox" type="checkbox" name="additional" value="sugarfree">Сахарозаменитель
+                <input class="form__additional-checkbox" type="checkbox" name="additional" value="sugarfree" checked>Сахарозаменитель
               </label>
             </li>
             <li class="form__additional-item">
@@ -106,19 +106,19 @@
           </ul>
         </fieldset>
         <button class="btn btn--accent form__btn" type="submit">Отправить заявку</button>
-        <small class="form__footnote">* — Обязательные поля</small>
+        <span class="form__footnote">* — Обязательные поля</span>
       </form>
     </section>
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo-text" href="index.html"></a>
+    <a class="page-footer__logo-text" href="index.html" aria-label="На главную"><img class="page-footer__logo-text" src="https://via.placeholder.com/128x64" width="128" height="64" alt="Кэт Энерджи"></a>
     <ul class="page-footer__socials">
-      <li class="page-footer__social"><a href="">ВК</a></li>
-      <li class="page-footer__social"><a href="">Instagram</a></li>
-      <li class="page-footer__social"><a href="">Fb</a></li>
+      <li class="page-footer__social"><a class="page-footer__link page-footer__link--vk" href="" aria-label="Вконтакте">ВК</a></li>
+      <li class="page-footer__social"><a class="page-footer__link page-footer__link--inst" href="" aria-label="Инстаграм">Instagram</a></li>
+      <li class="page-footer__social"><a class="page-footer__link page-footer__link--fb" href="" aria-label="Фейсбук">Fb</a></li>
     </ul>
-    <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <a class="page-footer__link page-footer__link--academy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">HTML Academy</a>
   </footer>
 </body>
 
