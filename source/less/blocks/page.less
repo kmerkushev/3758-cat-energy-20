@@ -1,0 +1,51 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input[type="text"] {
+  padding: 0;
+}
+
+@font-face {
+  src:local('Oswald Regular'), local('Oswald-Regular'), url('../fonts/oswaldregular.woff2') format('woff2'),
+  url( '../fonts/oswaldregular.woff') format('woff');
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  src:local('Oswald Medium'), local('Oswald-Medium'), url('../fonts/oswaldmedium.woff2') format('woff2'),
+  url( '../fonts/oswaldmedium.woff') format('woff');
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  src: local('Arial');
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.page__body {
+  background-color: @white;
+  color: @black;
+  font-family: @arial;
+  font-size: 14px;
+  line-height: 18px;
+}
