@@ -4,13 +4,12 @@
   line-height: 20px;
   color: @black;
   background-color: @white;
-  position: relative;
 }
 
 .header__wrapper {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 12px;
   padding-right: 23px;
   padding-bottom: 12px;
@@ -19,7 +18,7 @@
 }
 
 .header__toggle {
-  background-image: url('../img/icon-mobile-menu.svg');
+  background-image: url("../img/icon-mobile-menu.svg");
   background-repeat: no-repeat;
   font-size: 0;
   background-color: @white;
@@ -29,8 +28,22 @@
 }
 
 .header__toggle--close {
-  background-image: url('../img/icon-close.svg');
+  background-image: url("../img/icon-close.svg");
   width: 24px;
   height: 18px;
   background-position-x: 3px;
+}
+
+.header__main-nav {
+  position: absolute;
+  top: 63px;
+  z-index: 999;
+}
+
+.header__logo {
+  .a();
+}
+
+.header__logo-img {
+  max-width: 100%;
 }

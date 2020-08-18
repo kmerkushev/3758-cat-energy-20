@@ -5,6 +5,6 @@ let btnMenu = document.getElementsByClassName('header__toggle')[0];
 btnMenu.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
-  menu.classList.toggle("hidden");
+  menu.classList.toggle("visually-hidden");
   btnMenu.classList.toggle("header__toggle--close");
 }
