@@ -1,0 +1,19 @@
+.main__promo-item-wrapper {
+  .container();
+  padding-top: 20px;
+}
+
+.main__promo-list {
+  .list();
+}
+
+.main__promo-item {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: 20px;
+    box-sizing: border-box;
+    margin-top: 0;
+  }
+}
