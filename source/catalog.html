@@ -11,12 +11,12 @@
 <body class="page__body body">
   <header class="body__header header">
     <div class="header__wrapper">
-      <a href="index.html" class="header__logo header__logo--mini">
+      <a class="header__logo header__logo--mini" href="index.html">
         <img class="header__logo-img" src="img/logo-mobile.svg" width="190" height="37" alt="Логотип Кэт Энерджи">
       </a>
       <button class="header__toggle" type="button">Открыть меню</button>
     </div>
-    <nav class="header__main-nav main-nav visually-hidden">
+    <nav class="header__main-nav header__main-nav--nojs main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item-wrapper"><a class="site-list__item site-list__item--active" href="index.html">Главная</a></li>
         <li class="site-list__item-wrapper"><a class="site-list__item">Каталог продукции</a></li>
@@ -201,7 +201,7 @@
       </ul>
     </section>
 
-    <section class="page-catalog__additional additional">
+    <section class="page-catalog__additional additional container">
       <h2 class="additional__heading">Дополнительные товары</h2>
       <ul class="additional__list">
         <li class="additional__item">
@@ -239,8 +239,10 @@
       </ul>
     </section>
 
-    <section class="page-catalog__gift gift">
-      <h2 class="gift__heading">Закажите все и&nbsp;получите чехол для кота в&nbsp;подарок!</h2>
+    <section class="page-catalog__gift gift container">
+      <div class="gift__heading-wrapper">
+        <h2 class="gift__heading">Закажите все и&nbsp;получите чехол для кота в&nbsp;подарок!</h2>
+    </div>
     </section>
 
   </main>
@@ -250,17 +252,17 @@
       <h2 class="visually-hidden">Адрес и&nbsp;карта</h2>
       <div class="contacts__address-wrapper">
         <h3 class="contacts__heading">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д.&nbsp;19/8 Санкт-Петербург</p>
       </div>
       <article class="contacts__map">
         <h2 class="visually-hidden">Наш адрес на&nbsp;карте</h2>
-        <img class="contacts__map-image" src="https://via.placeholder.com/320x362" width="320" height="362" alt="Наш адрес на карте">
+        <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Наш адрес на карте">
       </article>
     </section>
 
     <section class="footer__links footer-links">
       <h2 class="visually-hidden">Ссылки</h2>
-      <a class="footer-links__logo-text" href="index.html" aria-label="Перейти на главную страницу"><img  class="footer-links__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="Кэт Энерджи"></a>
+      <a class="footer-links__logo-text" href="index.html" aria-label="Перейти на главную страницу"><img class="footer-links__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="Кэт Энерджи"></a>
       <ul class="footer-links__socials">
         <li class="footer-links__social"><a class="footer-links__link footer-links__link--vk" href="" aria-label="Вконтакте"></a></li>
         <li class="footer-links__social"><a class="footer-links__link footer-links__link--inst" href="" aria-label="Инстаграм"></a></li>

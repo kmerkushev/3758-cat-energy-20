@@ -10,9 +10,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 12px;
-  padding-right: 23px;
-  padding-bottom: 12px;
+  padding-top: 13px;
+  padding-right: 20px;
+  padding-bottom: 13px;
   padding-left: 20px;
   border-bottom: 1px solid @border-gray;
 }
@@ -25,6 +25,7 @@
   border: none;
   width: 24px;
   height: 18px;
+  cursor: pointer;
 }
 
 .header__toggle--close {
@@ -36,8 +37,15 @@
 
 .header__main-nav {
   position: absolute;
-  top: 63px;
+  top: 65px;
+  left: 0;
   z-index: 999;
+}
+
+.header__main-nav--nojs {
+  position: relative;
+  top: 0;
+  left: 1px;
 }
 
 .header__logo {
