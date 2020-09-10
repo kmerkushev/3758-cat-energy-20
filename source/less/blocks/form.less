@@ -6,6 +6,7 @@
   border: none;
   padding-top: 0;
   padding-bottom: 21px;
+  margin: 0;
 }
 
 .form__cat-parameter {
@@ -29,26 +30,20 @@
   align-items: center;
 }
 
-.form__label--email {
-
-  &::after {
-    width: 20px;
-    height: 14px;
-    content: url("../img/icon-mail.svg");
-    position: absolute;
-    right: 15px;
-  }
+.form__label--email::after {
+  width: 20px;
+  height: 14px;
+  content: url("../img/icon-mail.svg");
+  position: absolute;
+  right: 15px;
 }
 
-.form__label--phone {
-
-  &::after {
-    width: 20px;
-    height: 20px;
-    content: url("../img/icon-phone.svg");
-    position: absolute;
-    right: 15px;
-  }
+.form__label--phone::after {
+  width: 20px;
+  height: 20px;
+  content: url("../img/icon-phone.svg");
+  position: absolute;
+  right: 15px;
 }
 
 .form__input {
@@ -58,13 +53,6 @@
   width: 100%;
   border: 1px solid @special-gray;
   position: relative;
-
-  &::after {
-    width: 20px;
-    height: 14px;
-    content: url("../img/icon-mail.svg");
-    position: absolute;
-  }
 }
 
 .form__phone {
@@ -74,13 +62,6 @@
   width: 100%;
   border: 1px solid @special-gray;
   position: relative;
-
-  &::after {
-    width: 20px;
-    height: 14px;
-    content: url("../img/icon-mail.svg");
-    position: absolute;
-  }
 }
 
 .form__purpose {
@@ -90,6 +71,7 @@
   border-left: none;
   padding-top: 20px;
   padding-bottom: 20px + 6px;
+  margin: 0;
 }
 
 .form__purpose-list {
@@ -150,6 +132,8 @@
 .form__owner {
   border: none;
   margin-top: 25px;
+  margin-right: 0;
+  margin-left: 0;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -175,7 +159,7 @@
     flex-shrink: 1;
     width: 100%;
     margin-top: 15px;
-    margin-right: -30px;
+    margin-right: -20px;
     margin-left: 22px;
   }
 }
@@ -199,6 +183,8 @@
   padding-top: 0;
   padding-bottom: 0;
   margin-top: 26px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .form__comment {
@@ -211,8 +197,9 @@
   text-transform: uppercase;
   color: @special-dark-gray;
   width: 100%;
-  padding: 13px 15px;
+  padding: 13px 11px;
   border: 1px solid @special-gray;
+  box-sizing: border-box;
 }
 
 .form__additional {
@@ -220,6 +207,8 @@
   padding-top: 0;
   padding-bottom: 0;
   margin-top: 19px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .form__additional-list {
